@@ -12,3 +12,14 @@ while current_number != 1:
 print(current_number)
 print(f"Steps:", end=" ") 
 print(step_count, end="")
+print("=== Challenge 2: Prime Number Checker ===")
+prime = True # needed assistance in making the is or is not prime statment true or false this helped produce the correct output with no repeates 
+n = int(input("Enter a number: "))
+print(f"Testing divisors from 2 to {n-1}...") 
+for i in range(2, n):
+    if n % i == 0:
+        print(f"{n} is not prime (divisible by {i})")
+        prime = False # needed assistance in making the is or is not prime statment true or false this helped produce the correct output with no repeates 
+        break 
+if prime: # needed assistance in making the is or is not prime statment true or false this helped produce the correct output with no repeates  
+    print(f"{n} is prime!")
