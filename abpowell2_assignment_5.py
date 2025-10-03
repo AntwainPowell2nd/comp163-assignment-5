@@ -23,3 +23,15 @@ for i in range(2, n):
         break 
 if prime: # needed assistance in making the is or is not prime statment true or false this helped produce the correct output with no repeates  
     print(f"{n} is prime!")
+print() 
+
+print(f"=== Challenge 3: Multiplication Table ===") 
+print("Multiplication Table:")
+print("     1   2   3   4   5   6   7   8   9  10")
+for rownum in range(1, 11):
+    print()
+    print(f"{rownum:2}", end="")
+    for columnnum in range(1, 11):
+        product = rownum * columnnum
+        print(f"{product:4}", end="") 
+
